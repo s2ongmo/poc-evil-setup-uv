@@ -1,0 +1,10 @@
+name: "poc-evil-setup-uv"
+description: "PoC: simulated compromised setup-uv action"
+inputs:
+  github-token:
+    description: "Mimics astral-sh/setup-uv github-token input"
+    required: false
+    default: ${{ github.token }}
+runs:
+  using: "node20"
+  main: "index.js"
